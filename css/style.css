@@ -85,6 +85,7 @@ body{
    font-size: 30px;
    background:burlywood;
    padding:10px 5px;
+
 }
 
 .about p{
@@ -219,3 +220,38 @@ body{
     margin:10px;
     width:70px;
 } 
+
+
+/*  ====================== Adding animations  =========================================  */
+
+.anim{
+    color:#dc143c;
+    font-family: "sarabun" , sans-serif;
+}
+
+#anim-me{
+    animation-name: red-to-black;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count:4;
+    animation-direction:alternate ;
+}
+
+@keyframes red-to-black{
+    0%{
+      background: red;
+      transform: translate(0px,0px);
+    }
+
+    50%{
+     background: blue;
+     transform: translate(10px,10px);
+    }
+
+    100%{
+        background: black;
+        transform: translate(20px,20px);
+    }
+
+}
